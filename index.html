@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles/dist/forAll.css">
-    <link rel="stylesheet" href="styles/dist/header_navlink.css">
-    <link rel="stylesheet" href="styles/dist/header_banner.css">
-    <link rel="stylesheet" href="styles/dist/our_project.css">
+    <link rel="stylesheet" href="styles/header/dist/header_navlink.css">
+    <link rel="stylesheet" href="styles/header/dist/header_banner.css">
+    <link rel="stylesheet" href="styles/our_projects/dist/main.css">
+    <link rel="stylesheet" href="styles/our_projects/dist/example_blocks.css">
 </head>
 <body>
     <header class="header">
@@ -57,7 +58,7 @@
                     </div>
 
                     <div class="text__with-button">
-                        <a href="#" class="check-out-order">
+                        <a href="#" class="check-out-order-btn">
                             Заказать выезд специалиста
                         </a>
     
@@ -85,7 +86,143 @@
             <h2 class="title">
                 Наши проекты
             </h2>
+
+            <div class="tabs">
+                <div class="tab__item made-of-wood active-tab" onclick="openPage('made-of-wood')">
+                    Дома из бруса
+                </div>
+                <div class="tab__item made-of-blocks" onclick="openPage('made-of-blocks')">
+                    Дома из блоков
+                </div>
+                <div class="tab__item frame-houses" onclick="openPage('frame-houses')">
+                    Каркасные
+                </div>
+                <div class="tab__item bowers" onclick="openPage('bowers')">
+                    Беседки
+                </div>
+            </div>
+
+            <div class="examples-of-projects">
+                <div class="example__block">
+                    <div class="photo-part">
+                        <img src="img/our_projects/premium_house.png" alt="">
+                    </div>
+                    <div class="about-project">
+                        <div class="project-information">
+                            <div class="status-name">
+                                Премиум
+                            </div>
+
+                            <div class="obj-area">
+                                <span>345 м&sup2;</span> Площадь объекта
+                            </div>
+
+                            <div class="obj-layout">
+                                <p>
+                                    <img src="img/our_projects/rooms.png" alt=""> 
+                                    5 комнат
+                                    &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                    <img src="img/our_projects/toilets.png" alt="">
+                                    3 санузла
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="learn-more-and-price">
+                            <div class="learn-more-btn">
+                                Узнать подробнее
+                            </div>
+
+                            <div class="price">
+                                от 7 356 000 рублей
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example__block">
+                    <div class="photo-part">
+                        <img src="img/our_projects/comfort_house.png" alt="">
+                    </div>
+                    <div class="about-project">
+                        <div class="project-information">
+                            <div class="status-name">
+                                Комфорт
+                            </div>
+
+                            <div class="obj-area">
+                                <span>216 м&sup2;</span> Площадь объекта
+                            </div>
+
+                            <div class="obj-layout">
+                                <p>
+                                    <img src="img/our_projects/rooms.png" alt=""> 
+                                    2 комнат
+                                    &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                    <img src="img/our_projects/toilets.png" alt="">
+                                    2 санузла
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="learn-more-and-price">
+                            <div class="learn-more-btn">
+                                Узнать подробнее
+                            </div>
+
+                            <div class="price">
+                                от 5 565 000 рублей
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example__block">
+                    <div class="photo-part">
+                        <img src="img/our_projects/budgetary_house.png" alt="">
+                    </div>
+                    <div class="about-project">
+                        <div class="project-information">
+                            <div class="status-name">
+                                Премиум
+                            </div>
+
+                            <div class="obj-area">
+                                <span>102 м&sup2;</span> Площадь объекта
+                            </div>
+
+                            <div class="obj-layout">
+                                <p>
+                                    <img src="img/our_projects/rooms.png" alt=""> 
+                                    2 комнат
+                                    &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                    <img src="img/our_projects/toilets.png" alt="">
+                                    1 санузла
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="learn-more-and-price">
+                            <div class="learn-more-btn">
+                                Узнать подробнее
+                            </div>
+
+                            <div class="price">
+                                от 4 278 000 рублей
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div href="#" class="view_all_projects">
+                <div href="#" class="wrapper">
+                    Смотреть все работы
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="scripts/dist/openPage.dev.js"></script>
 </body>
 </html>

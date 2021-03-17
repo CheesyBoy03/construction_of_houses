@@ -1,10 +1,20 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #181818;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header .header-wrapper .header-wrapper__banner .banner__text {
   height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  padding-left: 50px;
 }
 @media screen and (max-width: 1441px) {
   .header .header-wrapper .header-wrapper__banner .banner__text {
@@ -43,7 +53,7 @@
     font-size: 1em;
   }
 }
-.header .header-wrapper .header-wrapper__banner .banner__text .check-out-order {
+.header .header-wrapper .header-wrapper__banner .banner__text .check-out-order-btn {
   font-size: 24px;
   color: #fff;
   padding: 20px 40px;
@@ -51,12 +61,12 @@
   border-radius: 500px;
 }
 @media screen and (max-width: 1501px) {
-  .header .header-wrapper .header-wrapper__banner .banner__text .check-out-order {
+  .header .header-wrapper .header-wrapper__banner .banner__text .check-out-order-btn {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1050px) {
-  .header .header-wrapper .header-wrapper__banner .banner__text .check-out-order {
+  .header .header-wrapper .header-wrapper__banner .banner__text .check-out-order-btn {
     font-size: 1em;
     padding: 15px 30px;
   }
