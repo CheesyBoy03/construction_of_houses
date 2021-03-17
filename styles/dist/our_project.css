@@ -1,0 +1,21 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #181818;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.our-project {
+  width: 100%;
+}
+.our-project .our-project__wrapper {
+  width: 80%;
+  margin: auto;
+}
+.our-project .our-project__wrapper .title {
+  text-align: center;
+}
