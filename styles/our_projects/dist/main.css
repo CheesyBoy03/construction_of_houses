@@ -11,7 +11,7 @@ a {
 
 .our-project {
   width: 100%;
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 .our-project .our-project__wrapper {
   width: 80%;
@@ -19,12 +19,13 @@ a {
 }
 .our-project .our-project__wrapper .title {
   text-align: center;
+  font-size: 36px;
 }
 .our-project .our-project__wrapper .tabs {
   display: flex;
   justify-content: space-between;
   width: 800px;
-  margin: 30px auto 0;
+  margin: 50px auto 0;
 }
 .our-project .our-project__wrapper .tabs .tab__item {
   background-color: #f8f6f6;
