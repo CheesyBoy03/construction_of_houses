@@ -1,0 +1,70 @@
+.recent-works__wrapper{
+  width: 80%;
+  max-width: 1300px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.recent-works__wrapper h2{
+  text-align: center;
+  padding: 40px 0;
+}
+
+.recent-works__list{
+  width: 70%;
+  margin: auto;
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+  grid-gap: 50px;
+  justify-items: center;
+}
+
+.container{
+  width: 300px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+}
+
+.conmtainer, .container img, .container:hover .hover-box{
+  border-radius: 20px;
+}
+
+.container img{
+  display: block;
+  width: 300px;
+  height: 200px;
+}
+
+.hover-box{
+  width: 0;
+  height: 200px;
+  background: rgba(13, 227, 172, 0.75);
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: #fff;
+  overflow: hidden;
+  transition: .8s ease;
+}
+
+.hover-box p, h4{
+  color: #fff;
+}
+
+.hover-box h4{
+  font-size: 14px;
+  /*border: 6px solid white;*/
+  padding: 10px 30px;
+}
+
+.container:hover .hover-box{
+  width: 300px;
+}

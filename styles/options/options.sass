@@ -4,7 +4,7 @@
     @include Block
     //border: 1px solid red
     //display: flex
-    padding-bottom: 500px
+    padding-bottom: 50px
     .options__title
         width: 300px
         margin: 0 auto 50px
@@ -13,9 +13,14 @@
         text-align: center
 
     .list-of-options
-        display: flex
-        justify-content: space-around
+        display: grid
+        grid-auto-flow: row
+        grid-template-columns: repeat(auto-fill, minmax(360px, 2fr))
+        grid-gap: 50px      
+        justify-items: center
+        
         width: 80%
+        max-width: 1300px
         //border: 1px solid
         margin: auto 
         .option-block

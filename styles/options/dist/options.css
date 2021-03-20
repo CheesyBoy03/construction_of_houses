@@ -12,7 +12,7 @@ a {
 .options {
   width: 80%;
   margin: auto;
-  padding-bottom: 500px;
+  padding-bottom: 50px;
 }
 .options .options__title {
   width: 300px;
@@ -21,9 +21,13 @@ a {
   text-align: center;
 }
 .options .list-of-options {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
+  grid-gap: 50px;
+  justify-items: center;
   width: 80%;
+  max-width: 1300px;
   margin: auto;
 }
 .options .list-of-options .option-block {

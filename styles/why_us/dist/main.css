@@ -12,10 +12,14 @@ a {
 .why-us {
   width: 80%;
   margin: auto;
+  padding-bottom: 50px;
+}
+.why-us .why-us__wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 50px;
+  width: 100%;
 }
 .why-us .photo-part {
   width: 40%;
@@ -24,7 +28,7 @@ a {
   width: 100%;
 }
 .why-us .why-us__text {
-  width: 55%;
+  width: 50%;
 }
 .why-us .why-us__text .why-us__title {
   font-size: 36px;
@@ -45,17 +49,4 @@ a {
 }
 .why-us .why-us__text .why-us__list .list-item:last-child img {
   width: 120px;
-}
-@media screen and (max-width: 700px) {
-  .why-us {
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-  }
-  .why-us .photo-part {
-    width: 70%;
-  }
-  .why-us .why-us__text {
-    width: 100%;
-  }
 }
