@@ -1,0 +1,76 @@
+@import "../forAll"
+
+.why-us
+    @include Block
+
+    padding-bottom: 50px
+    //border: 1px solid red
+
+    .why-us__wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+
+        @media screen and ( max-width: 500px )
+            flex-direction: column
+            justify-content: center
+
+        width: 100%
+    .photo-part
+        width: 40%
+        border: 1px solid red
+
+        @media screen and ( max-width: 500px )
+            width: 70vw
+            margin: auto
+            img
+                width: 100%
+        img
+            width: 100%
+
+            
+
+    .why-us__text
+        width: 50%
+        border: 1px solid
+
+        @media screen and ( max-width: 500px )
+            width: 90vw
+            margin: auto
+
+        .why-us__title
+            font-size: 36px
+            margin-bottom: 30px
+            span
+                color: #0de3ac
+
+        .why-us__list
+            .list-item
+                display: flex
+                align-items: center
+                margin-top: 30px
+                font-weight: 600
+                width: 50%
+                border: 1px solid
+
+                @media screen and ( max-width: 500px )
+                    width: 100%
+
+                img
+                    width: 80px
+                &:last-child
+                    img
+                        width: 120px
+    //@media screen and ( max-width: 700px )
+    //    .photo-part
+    //        width: 70%
+    //        //display: none
+
+    //    .why-us__text
+    //      width: 100%
+
+    //  flex-direction: column
+    //  justify-content: center            
+    //  margin: auto          
+    

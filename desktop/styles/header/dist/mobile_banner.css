@@ -1,0 +1,141 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #181818;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .mobile-header {
+    background-image: url("../../../img/back.png");
+  }
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-left: -20px;
+    margin-bottom: -30px;
+    width: max-content;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 1441px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text h1 {
+    font-size: 72px;
+    margin-bottom: -30px;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 1050px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text h1 {
+    font-size: 2.7em;
+    margin-bottom: -10px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 370px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text p {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 1441px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text p {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 1050px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text p {
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .check-out-order-btn {
+    font-size: 24px;
+    color: #fff;
+    padding: 20px 40px;
+    background: linear-gradient(150deg, #33e7b9, #33e7b9, #3ce294, #98e05f, #98e05f);
+    border-radius: 500px;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 1501px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .check-out-order-btn {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 1050px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .check-out-order-btn {
+    font-size: 1em;
+    margin: auto;
+    padding: 15px 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .banner__description {
+    margin: 30px 0 0 70px;
+    display: flex;
+    width: 20%;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 1050px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .banner__description {
+    margin-top: 10px auto;
+    width: 40%;
+    border: 1xp solid red;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .banner__description img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 1440px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .banner__description img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 1050px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .banner__description img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .banner__description .text p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .banner__description .text p:first-child {
+    margin: 20px 10px 0;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 1050px) {
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .banner__description .text p {
+    width: 150px;
+    font-size: 0.6em;
+    margin-left: 10px;
+  }
+  .mobile-header .header-wrapper .header-wrapper__banner .banner__text .text__with-button .banner__description .text p:first-child {
+    margin-top: 10px;
+  }
+}

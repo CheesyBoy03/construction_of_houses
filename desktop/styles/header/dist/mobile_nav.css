@@ -1,0 +1,33 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #181818;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mobile-header .navbar-brand img {
+  width: 60px;
+  height: 60px;
+}
+.mobile-header .header-wrapper__contact {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-header .header-wrapper__contact a {
+  width: fit-content;
+  background-color: #0de3ac;
+  border-radius: 50px;
+  padding: 5px 15px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .mobile-header {
+    display: none;
+  }
+}

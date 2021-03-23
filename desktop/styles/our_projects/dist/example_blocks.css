@@ -1,0 +1,88 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #181818;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.examples-of-projects {
+  width: 1300px;
+  margin: 50px auto 0;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
+  grid-gap: 50px;
+  justify-items: center;
+}
+@media screen and (max-width: 500px) {
+  .examples-of-projects {
+    width: 100vw;
+    padding: 0;
+    grid-gap: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.examples-of-projects .example__block {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 500px) {
+  .examples-of-projects .example__block {
+    width: 90vw;
+  }
+}
+.examples-of-projects .example__block .photo-part img {
+  width: 400px;
+}
+@media screen and (max-width: 500px) {
+  .examples-of-projects .example__block .photo-part img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+.examples-of-projects .example__block .about-project {
+  padding: 10px 20px 20px;
+  font-weight: 600;
+}
+.examples-of-projects .example__block .about-project .project-information div:nth-child(2) {
+  margin: 5px 0;
+}
+.examples-of-projects .example__block .about-project .project-information div:nth-child(3) {
+  margin: 7px 0;
+}
+.examples-of-projects .example__block .about-project .project-information .status-name {
+  font-weight: bold;
+  font-size: 24px;
+}
+.examples-of-projects .example__block .about-project .project-information .obj-area span {
+  color: #0de3ac;
+}
+.examples-of-projects .example__block .about-project .project-information .obj-layout p {
+  display: flex;
+  align-items: center;
+}
+.examples-of-projects .example__block .about-project .project-information .obj-layout p img {
+  margin-right: 10px;
+}
+.examples-of-projects .example__block .about-project .learn-more-and-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+.examples-of-projects .example__block .about-project .learn-more-and-price .learn-more-btn {
+  width: 130px;
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 10px;
+  background-color: #0de3ac;
+}
+.examples-of-projects .example__block .about-project .learn-more-and-price .learn-more-btn:hover {
+  cursor: pointer;
+}
