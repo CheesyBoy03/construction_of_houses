@@ -12,14 +12,30 @@ $width: 400px
     grid-gap: 50px      
     justify-items: center
 
+    @media screen and ( max-width: 500px )
+        width: 100vw
+        padding: 0
+        grid-gap: 0
+        display: flex
+        flex-direction: column
+        //align-items: center
+
     .example__block
         width: $width
         border-radius: 10px
         box-shadow: 4px 5px 20px rgba(0, 0, 0, .1)
 
+        @media screen and ( max-width: 500px )
+            width: 90vw
+            
+            //max-width: 300px 
+
         .photo-part
             img
                 width: $width
+                @media screen and ( max-width: 500px )
+                    width: 100%
+                    max-width: 350px 
 
         .about-project
             padding: 10px 20px 20px
