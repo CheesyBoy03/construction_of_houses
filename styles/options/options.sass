@@ -11,7 +11,7 @@
         //border: 1px solid red
         font-size: 24px
         text-align: center
-
+ 
     .list-of-options
         display: grid
         grid-auto-flow: row
@@ -23,6 +23,12 @@
         max-width: 1300px
         //border: 1px solid
         margin: auto 
+
+        @media screen and ( max-width: 500px )
+            width: 80vw
+            display: flex
+            flex-direction: column
+
         .option-block
             display: flex
             flex-direction: column
@@ -39,6 +45,9 @@
             background-size: contain
             background-repeat: no-repeat
             background-position: right
+
+            @media screen and ( max-width: 500px )
+                width: 80vw
 
             &:nth-child(2)
                 background-image: url("../../../img/options/card2.png")

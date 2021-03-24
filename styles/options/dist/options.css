@@ -11,7 +11,9 @@ a {
 
 .options {
   width: 80%;
+  max-width: 1300px;
   margin: auto;
+  padding: 50px 0;
   padding-bottom: 50px;
 }
 .options .options__title {
@@ -30,6 +32,13 @@ a {
   max-width: 1300px;
   margin: auto;
 }
+@media screen and (max-width: 500px) {
+  .options .list-of-options {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .options .list-of-options .option-block {
   display: flex;
   flex-direction: column;
@@ -43,6 +52,11 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+}
+@media screen and (max-width: 500px) {
+  .options .list-of-options .option-block {
+    width: 80vw;
+  }
 }
 .options .list-of-options .option-block:nth-child(2) {
   background-image: url("../../../img/options/card2.png");

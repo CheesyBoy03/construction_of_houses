@@ -11,30 +11,31 @@ a {
 
 .examples-of-projects {
   width: 1300px;
-  margin: 50px auto 0;
+  margin-top: 50px;
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 50px;
   justify-items: center;
 }
 @media screen and (max-width: 500px) {
   .examples-of-projects {
-    width: 100vw;
-    padding: 0;
-    grid-gap: 0;
+    width: 90vw;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .examples-of-projects .example__block {
   width: 400px;
+  margin: auto;
   border-radius: 10px;
   box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 500px) {
   .examples-of-projects .example__block {
-    width: 90vw;
+    width: 80vw;
   }
 }
 .examples-of-projects .example__block .photo-part img {
@@ -42,7 +43,7 @@ a {
 }
 @media screen and (max-width: 500px) {
   .examples-of-projects .example__block .photo-part img {
-    width: 100%;
+    width: 80vw;
     max-width: 350px;
   }
 }

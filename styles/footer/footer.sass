@@ -1,0 +1,73 @@
+@import "../forAll"
+    
+footer
+    height: 150px
+    width: 100vw
+    background-color: #0de3ac
+    margin: 0
+    box-sizing: border-box
+
+    .wrapper
+        width: 80%
+        max-width: 1300px
+        margin: auto
+        padding: 20px 0
+        //@include Block 
+
+        //border: 1px solid   
+
+        display: flex
+        align-items: center
+        justify-content: space-around
+
+        font-size: 90%
+        color: #09ad83
+
+        @media screen and ( max-width: 1000px )
+            width:  95vw 
+            justify-content: space-between
+
+            .contacts
+                display: none
+
+            .short-nav
+                //width: 
+                //border: 1px solid red
+                margin: 0 20px
+            
+            // .social-networks
+            //    width: 30px
+            .links-to-pages
+                width: 20vw
+                //border: 1px solid
+                h4
+                    display: none
+
+        a, h4
+            color: #09ad83
+
+        img
+            width: 60px
+            height: 60px
+
+        .short-nav
+            width: 10vw
+            min-width: fit-content
+            //border: 1px solid
+
+            a
+                display: block
+
+        .social-networks
+            //border: 1px solid red
+            display: flex
+            justify-content: space-between 
+            width: 60%
+
+            .links-to-pages
+                .links
+                    a
+                        text-decoration: none
+                        img
+                            width: 25px
+                            height: 25px

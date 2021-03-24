@@ -1,30 +1,47 @@
 @import "../forAll.sass"
-
+ 
 .our-project
     width: 100%
     padding-bottom: 50px
     .our-project__wrapper
         @include Block
+
+        display: flex
+        flex-direction: column
+        align-items: center
+        
+
         .title
             text-align: center
             font-size: 36px
-
+ 
         .tabs
             display: flex
             justify-content: space-between
             flex-wrap: wrap 
             //border: 1px solid red
-            width: 800px
-            margin: 50px auto 0
+            width: 50vw
+            max-width: 720px
+            margin-top: 50px
+            float: left
 
             @media screen and ( max-width: 500px )
-                width: 95vw
-                justify-content: space-around
+                width: 80vw
+                height: 200px
+                margin: auto
+                //border: 1px solid #ff00dd
+                flex-direction: column
+                align-items: center
+                justify-content: space-between
+                //margin: auto
+                //text-align: center
+                
 
             .tab__item
                 background-color: #f8f6f6
                 padding: 15px 30px
                 border-radius: 50px
+                //width: 1000px
                 
                 font-weight: 600
 
