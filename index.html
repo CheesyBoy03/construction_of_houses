@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="styles/header/dist/mobile_nav.css">
     <link rel="stylesheet" href="styles/header/dist/mobile_banner.css">
     <link rel="stylesheet" href="styles/header/dist/header_banner.css">
+    <link rel="stylesheet" href="styles/ad_banner/dist/ad_banner.css">
     <link rel="stylesheet" href="styles/our_projects/dist/main.css">
     <link rel="stylesheet" href="styles/our_projects/dist/example_blocks.css">
     <link rel="stylesheet" href="styles/why_us/dist/main.css">
     <link rel="stylesheet" href="styles/options/dist/options.css">
     <link rel="stylesheet" href="styles/recent_works/dist/main.css">
     <link rel="stylesheet" href="styles/footer/dist/footer.css">
+    <link rel="stylesheet" href="styles/dist/form_popup.css">
 
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -74,7 +76,7 @@
                     </div>
 
                     <div class="text__with-button">
-                        <a href="#" class="check-out-order-btn">
+                        <a href="#" class="check-out-order-btn" onclick="Popup()">
                             Заказать выезд специалиста
                         </a>
     
@@ -139,7 +141,7 @@
                     </div>
 
                     <div class="text__with-button">
-                        <a href="#" class="check-out-order-btn">
+                        <a href="#" class="check-out-order-btn" onclick="Popup()">
                             Заказать выезд специалиста
                         </a>
     
@@ -162,6 +164,13 @@
         </div>
     </div>
 
+    <div class="ad-banner">
+        <div class="wrapper">
+            <div class="ad-block">
+                <img src="img/ad_banner.png" alt="">
+            </div>
+        </div>
+    </div>
 
     <div class="our-project">
         <div class="our-project__wrapper">
@@ -494,24 +503,6 @@
                         </p>
                     </div>
                 </div>
-
-                <!--<div class="list-item">
-                    <img src="img/recent_works/house.png" alt="">
-                    
-                    <div class="hidden-description">
-                        <h4>
-                            Двухэтажный дом из бруса с местами для авто
-                        </h4>
-                        <p>
-                            п. Снегиревка
-                        </p>
-                    </div>
-                </div>
-                <div class="list-item"></div>
-                <div class="list-item"></div>
-                <div class="list-item"></div>
-                <div class="list-item"></div>
-                <div class="list-item"></div>-->
             </div>
 
             <div href="#" class="view_all_projects" onclick="alert('OK')">
@@ -564,6 +555,26 @@
         </div>
     </footer>
 
+    <div class="popup close-popup">
+        <div class="popup-wrapper">
+            <form action="/">
+                <p class="close" onclick="Popup()"><span>+</span> Закрыть</p>
+                
+                <div class="title">
+                    <p class="first-row">Заполните данные</p>
+                    <p class="second-row">и мы с вами свяжемся!</p>
+                </div>
+
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Номер телефона" class="center">
+                <input type="text" placeholder="Почта">
+
+                <button type="submit">Оформить выезд специалиста</button>
+              </form>
+        </div>
+    </div>
+
     <script src="scripts/dist/openPage.dev.js"></script>
+    <script src="scripts/dist/openPopup.dev.js"></script>
 </body>
 </html>

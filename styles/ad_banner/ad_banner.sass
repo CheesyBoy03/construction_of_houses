@@ -1,0 +1,29 @@
+@import "../forAll"
+
+.ad-banner
+    width: 100%
+    height: calc( fit-content * 100% )
+    //background-image: url('../../../img/tree.png')
+    //background-size: 30%
+    //background-repeat: no-repeat
+    //background-position: left bottom
+    .wrapper
+        width: 100%
+        max-width: 1300px
+        margin: auto
+        padding: 50px 0
+        //border: 1px solid 
+
+        @media screen and ( max-width: 500px )
+            width: 95vw
+
+        .ad-block
+            //max-width: 1000px
+            width: 100%
+            margin: auto
+            border-radius: 20px
+            //border: 1px solid
+
+            img
+                border-radius: 20px
+                width: 100%

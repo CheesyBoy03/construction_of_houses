@@ -1,0 +1,35 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #181818;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ad-banner {
+  width: 100%;
+  height: calc( fit-content * 100% );
+}
+.ad-banner .wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 50px 0;
+}
+@media screen and (max-width: 500px) {
+  .ad-banner .wrapper {
+    width: 95vw;
+  }
+}
+.ad-banner .wrapper .ad-block {
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+}
+.ad-banner .wrapper .ad-block img {
+  border-radius: 20px;
+  width: 100%;
+}
